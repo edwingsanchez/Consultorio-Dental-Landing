@@ -13,8 +13,13 @@
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
-        background: #F6F6F9FF; 
+        
         text-decoration: none;
+    }
+
+    body{
+        background: #F6F6F9FF; 
+        font-family: 'DM Sans';
     }
 
     header{
@@ -253,10 +258,10 @@
         width: 672px; 
         height: 74px; 
         padding: 0px 23px;
-
-        background: #F6F6F9FF; 
+        background-color: #F6F6F9; 
+        
         border-radius: 12px; 
-        border-style: solid 1px #D3D3D8FF; 
+        border: solid 1px #D3D3D8FF; 
         box-shadow: 0px 2px 4px #00000014, 0px 0px 0px #171a1f00;
 
         display: flex;
@@ -265,12 +270,81 @@
 
         font-family: DM Sans; 
         font-size: 16px; 
-        font-weight: 600;
-        color: #1F1F24FF; 
-        background: #00000000; /* transparent */
+        font-weight: 700;
+        color: #1F1F24FF;
         opacity: 1; 
         border: none;
     }
+
+
+    .contact-form{
+        width: 448px; 
+        height: 402px; 
+        padding: 32px;
+
+        background: #FFFFFFFF; /* white */
+        border-radius: 24px; 
+        box-shadow: 0px 20px 50px #00000033, 0px 0px 0px #171a1f00;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 27px;
+    }
+
+    .label{
+        font-family: DM Sans; 
+        font-size: 14px;
+        font-weight: 500;
+        color: #1F1F24FF;
+    }
+
+    .input{
+        width: 384px; 
+        height: 48px; 
+        background: #F8FAFCFF; 
+        border-radius: 12px; 
+        border-width: 1px; 
+        border-color: #D3D3D8FF; 
+        border-style: solid;  
+
+        font-family: DM Sans; 
+        font-size: 16px; 
+        line-height: 24px; 
+        font-weight: 400; 
+        color: #5B5B64FF; 
+        padding: 12px 17px;
+    }
+
+    .contact-form a{
+        width: 384px; 
+        height: 48px; 
+        padding: 0 12px;
+
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        
+        font-family: DM Sans; 
+        font-size: 14px; 
+        line-height: 22px; 
+        font-weight: 700; 
+        color: #E4FDF9FF; 
+        background: #0C9488FF; 
+        opacity: 1; 
+        border-radius: 12px; 
+        border-style: solid 0px #000000FF; 
+        }
+    
+    input::placeholder {
+        font-family: DM Sans; 
+        font-size: 16px; 
+        line-height: 24px; 
+        font-weight: 400; 
+        color: #5B5B64FF;
+        font-style:italic;
+    }
+
 
 
 
@@ -414,7 +488,7 @@
 
     <hr>
     
-    <section style="display: flex; flex-direction: column; align-items: center; gap: 48px;">
+    <section style="background: #E4FDF94D;  display: flex; flex-direction: column; align-items: center; gap: 48px;">
         <div style="width: 656px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 17px; text-align: center;">
             <h1>Lo que dicen nuestros pacientes</h1>
             <p class="section-subtitle">La satisfacción de quienes ya confían en nosotros es nuestra mejor carta de presentación.</p>
@@ -517,7 +591,7 @@
     
 
 
-    <section style="display: flex; flex-direction: column; align-items: center; gap: 48px;">
+    <section style="background-color:white; display: flex; flex-direction: column; align-items: center; gap: 48px;">
         <h1>Conoce a Nuestro Equipo</h1>
 
         <div style="display: flex; flex-direction: row; gap: 32px;">
@@ -545,7 +619,7 @@
     
 
 
-    <section style="display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
+    <section style="background: #F8FAFC;  display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
         <h1>Preguntas Frecuentes</h1>
         <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
             <div class="query">
@@ -576,8 +650,63 @@
     </section>
     <hr>
 
-    <section>
-        <h1>Contacto</h1>
+    <section style="display: flex; justify-content: center; align-items: center; width: 1440px; height: 948px; ">
+        <div style="width: 1184px; height: 756px; background: #0C9488FF; border-radius: 40px; box-shadow: 0px 25px 50px #00000040, 0px 0px 0px #171a1f00; display: flex; justify-content: center; align-items: center; gap: 79px;">
+            
+            <div style="background: #0C9488FF; width: 497px; display: flex; flex-direction: column; justify-content: center; gap: 44px;">
+                <div style="display: flex; flex-direction: column; gap: 32px;">
+                    <h1 style="color: #E4FDF9FF; width: 462px;">Tu primera consulta de diagnóstico es <span style="text-decoration: underline;">Totalmente Gratis</span></h1>
+                    <p class="section-subtitle" style="color: #E4FDF9FF; ">No dejes pasar más tiempo. Una pequeña molestia hoy puede ser un gran problema mañana. Agenda hoy y asegura tu salud dental.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: row; gap: 32px; color: #E4FDF9FF; font-weight: 500;">
+                    <div style="display: flex; flex-direction: column; gap: 26px;">  <p>Examen clínico completo</p> <p>Radiografías básicas incluidas</p>  </div>
+                    <div style="display: flex; flex-direction: column; gap: 26px;">  <p>Plan de tratamiento digital</p> <p>Limpieza simple opcional</p>  </div>
+                </div>
+                <a href="" style="  width: 308px; 
+                height: 56px; 
+                padding: 0 12px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                font-family: DM Sans; 
+                font-size: 18px; 
+                line-height: 28px; 
+                font-weight: 700; 
+                color: #0C9488FF; 
+                background: #FFFFFFFF; /* white */
+                opacity: 1; 
+                border-radius: 9999px;
+                border-style: solid 0px #000000FF; 
+                box-shadow: 0px 10px 25px #00000026, 0px 0px 0px #171a1f00; /* shadow-custom */
+                gap: 16px;"><p>Reserva tu espacio</p><p>-></p></a>
+
+            </div>
+
+            <div class="contact-form">
+                <div style="display: flex; justify-content: center;">
+                    <h3>¿Prefieres que te llamemos?</h3>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label class="label" for="text">Nombre Completo</label>
+                        <input class="input" type="text" placeholder="Ej. Juan Perez">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <label class="label" for="">Teléfono / WhatsApp</label>
+                        <input class="input" type="text" placeholder="Ej: +52 55 1234 5678">
+                    </div>
+
+                    <a class="button" href=""> Solicitar llamada</a>
+                    <p></p>
+                </div>
+                
+
+            </div>
+
+        </div>
     </section>
     <hr>
 
