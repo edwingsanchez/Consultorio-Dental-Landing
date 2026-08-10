@@ -13,13 +13,35 @@
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
+        background: #F6F6F9FF; 
+        text-decoration: none;
     }
 
     header{
-        height: 50px;
+        height: 81px;
         width: 100%; 
+        padding: 10px 48px;
 
-        padding: 20px 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+
+    }
+
+    header nav a {
+        font-family: DM Sans; 
+        font-size: 14px; 
+        color: black;
     }
     
     footer{
@@ -32,7 +54,7 @@
     section{
         height: 100vh;
         width: 100%; 
-        padding: 70px;
+        padding: 96px;
 
         display: flex;
         justify-content: center;
@@ -57,7 +79,7 @@
         color: #1F1F24FF;
     }
 
-    .section-title-subtitle{
+    .section-subtitle{
         font-family: DM Sans; 
         font-size: 20px; 
         line-height: 28px; 
@@ -66,63 +88,279 @@
     }
 
     .section-parrafo {
-        font-family: DM Sans; 
+        font-family: 'DM Sans'; 
         font-size: 16px; 
         line-height: 28px; 
         font-weight: 500; 
         color: #5B5B64FF; 
     }
 
+    p {
+        font-style: 'DM Sans';
+    }
+
+    .button{
+        border-radius: 9999px;
+        color: #E4FDF9FF;
+        background: #0C9488FF;
+        font-weight: 500; 
+        padding: 12px 24px;
+        font-style: 'DM Sans';
+    }
+
+
+    .Painpoint-card{
+        width: 200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .Servicios *{
+        background-color: white;
+    }
+
+
+    .rating-card{
+        width: 374px; 
+        height: 281px; 
+        background: #F6F6F9FF; 
+        border-radius: 12px; 
+
+        display: flex;
+        flex-direction: column;
+        font-family: 'DM Sans';
+
+    }
+
+
+
 
 </style>
 <body>
-
     <header>
-        <p></p>
+        <h3 style="font-size: 20px; font-weight: 700;">Sonrisitas</h2>
         <nav>
             <a href="">333-333-333</a>
-            <a href="">Reservar cita</a>
+            <a href="" class="button" style="font-weight: 600">Reservar Cita</a>
         </nav>
     </header>
     <hr>
 
+    <section style="display: flex; align-items: center; justify-content: center; gap: 65px;">
+        <div style="width: 559px; display: flex; flex-direction: column; align-items: center; gap: 32px;">
+            <h1 style="font-family: Outfit; font-size: 56px; line-height: 64px; font-weight: 700;">Recupera tu <span style="color: #0C9488; font-style: italic;">Seguridad</span> con una Sonrisa Radiante</h1>
+            <p class="section-subtitle">En Sonrisitas, transformamos vidas a través de la salud dental. Tecnología de vanguardia y calidez humana para toda tu familia.</p>
+            <div style="display: flex; flex-direction: row; gap: 30px; width: 100%; height: auto;">
+                <p class="button" style="font-size: 18px; font-family: DM Sans;">Agendar cita ahora</p>
+                <p class="button" style="font-size: 18px; font-family: DM Sans; background: #F6F6F9FF; color: black; border: solid 1px black; color: #1F1F24FF; ">Ver Servicios</p>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 26px; width: 100%; height: auto;">
+                <div>
+                    <img src="" alt="" style="width: 36px; height: 36px;">
+                    <img src="" alt="" style="width: 36px; height: 36px;">
+                    <img src="" alt="" style="width: 36px; height: 36px;">
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <p style="padding: 0%; margin: 0%; font-weight: bold; font-size: 30px; width: 88px; height: 16px; display: flex; align-items: center;">*****</p>
+                    <p><span style="font-weight: bold;">2,500</span> Pacientes Felices</p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 538px; height: 314px; border: solid 1px black; border-radius: 25px;">
+            <img src="" alt="">
+        </div>
+
+    </section>
+    <hr>
+
+    <section style="display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 30px;"> 
+        <div style="width: 674px; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: center; gap: 16px;">
+            <h1>¿Miedo al dentista? Cambiamos tu perspectiva</h1>
+            <p class="section-subtitle">Sabemos que visitar al dentista puede ser estresante. Por eso hemos diseñado un ambiente relajado y procedimientos sin dolor.</p>
+        </div>
+        
+        <div style="display: flex; flex-direction: row; justify-content: center; gap: 78px;">
+            
+            <div class="Painpoint-card">
+                <h3>Seguridad Total</h3>
+                <p class="section-parrafo">Protocolos de bioseguridad certificados para tu tranquilidad.</p>
+            </div>
+            
+            <div class="Painpoint-card">
+                <h3>Sin Esperas</h3>
+                <p class="section-parrafo">Valoramos tu tiempo. Agendamos con precisión para evitar retrasos.</p>
+            </div>
+            
+            <div class="Painpoint-card">
+                <h3>Calidad Superior</h3>
+                <p class="section-parrafo">Utilizamos solo los mejores materiales dentales del mercado.</p>
+            </div>
+        </div>
+        <a href="" class="button">Descubre Nuestro Metodo</a>
+
+    </section>
+    <hr>
+
+
+
+
+
+
+
+    <section class="Servicios" style="background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 112px; ">
+        <div style="height: auto; width: 650px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+            <h1>Nuestros Servicios Especializados</h1>
+            <p class="section-parrafo">Tratamientos diseñados para cada etapa de tu vida y necesidades específicas.</p>
+        </div>
+        <div style="height: auto; display: flex; flex-direction: row; justify-content: center; gap: 84px;">
+            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 32px;">
+                <h2>Odontología Estética Avanzada</h2>
+                <p class="section-parrafo">Consigue la sonrisa de tus sueños con carillas de porcelana, diseño de sonrisa digital y blanqueamiento profesional de última generación. Resultados naturales y duraderos.</p>
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 12px; font-family: 'DM Sans'; font-weight: 500;">
+                    <p>Atención personalizada</p>
+                    <p>Tecnología de punta</p>
+                    <p>Resultados garantizados</p>
+                </div>
+                <a href="" class="button" style="width: 150px; background-color: #0C9488; font-weight: 500; font-family: 'DM Sans';">Saber Más ></a>
+            </div>
+            <div style="width: 567px; height: 378px; border: solid 1px black; border-radius: 15px;">
+                <img src="" alt="">
+            </div>
+        </div>  
+        
+    </section>
+
+    <section class="Servicios" style="height: 509px; background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 112px; ">
+        <div style="height: auto; display: flex; flex-direction: row; justify-content: center; gap: 84px;">
+            <div style="width: 567px; height: 378px; border: solid 1px black; border-radius: 15px;">
+                <img src="" alt="">
+            </div>
+            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 32px;">
+                <h2>Clínica Moderna y Equipada</h2>
+                <p class="section-parrafo">Contamos con equipos de rayos X digitales, escáneres intraorales y sillones ergonómicos para asegurar diagnósticos precisos y la máxima comodidad durante tu visita.</p>
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 12px; font-family: 'DM Sans'; font-weight: 500;">
+                    <p>Atención personalizada</p>
+                    <p>Tecnología de punta</p>
+                    <p>Resultados garantizados</p>
+                </div>
+                <a href="" class="button" style="width: 150px; background-color: #0C9488; font-weight: 500; font-family: 'DM Sans';">Saber Más ></a>
+            </div>
+        </div>  
+    </section>
+
+    <section class="Servicios" style="height: 509px; background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 112px; ">
+<div style="height: auto; display: flex; flex-direction: row; justify-content: center; gap: 84px;">
+            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 32px;">
+                <h2>Implantes y Rehabilitación</h2>
+                <p class="section-parrafo">Recupera la funcionalidad de tu boca con especialistas en implantología. Procedimientos mínimamente invasivos con materiales biocompatibles de alta resistencia.</p>
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 12px; font-family: 'DM Sans'; font-weight: 500;">
+                    <p>Atención personalizada</p>
+                    <p>Tecnología de punta</p>
+                    <p>Resultados garantizados</p>
+                </div>
+                <a href="" class="button" style="width: 150px; background-color: #0C9488; font-weight: 500; font-family: 'DM Sans';">Saber Más ></a>
+            </div>
+            <div style="width: 567px; height: 378px; border: solid 1px black; border-radius: 15px;">
+                <img src="" alt="">
+            </div>
+        </div>  
+        
+    </section>
+
+
+
+
+
+
+
+    <hr>
+    
+    <section style="display: flex; flex-direction: column; align-items: center; gap: 48px">
+        <div style="width: 656px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 17px; text-align: center;">
+            <h1>Lo que dicen nuestros pacientes</h1>
+            <p class="section-subtitle">La satisfacción de quienes ya confían en nosotros es nuestra mejor carta de presentación.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: row; justify-content: center; gap: 31px;">
+            <div class="rating-card">
+                <div>
+                    <p>*****</p>
+                    <p>"Increíble trato desde el primer día. El equipo de Sonrisitas me hizo sentir en casa y los resultados de mis brackets son espectaculares."</p>
+                </div>
+
+                <div>
+                    <img src="" alt="">
+                    <div style="display: flex; flex-direction: column;">
+                        <p>Carla Mendez</p>
+                        <p>Paciente de Ortodoncia</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="rating-card">
+                <div>
+                    <p>*****</p>
+                    <p>"Buscaba algo natural y profesional. Aquí entendieron perfectamente lo que quería. El proceso fue rápido y sin dolor. ¡Altamente recomendados!"</p>
+                </div>
+
+                <div>
+                    <img src="" alt="">
+                    <div style="display: flex; flex-direction: column;">
+                        <p>Roberto Silva De alegría</p>
+                        <p>Paciente de Ortodoncia</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            <div class="rating-card">
+                <div>
+                    <p>*****</p>
+                    <p>"Llevar a mis hijos al dentista solía ser un drama, pero en Sonrisitas los tratan con tanta dulzura que ahora hasta piden ir. ¡Gracias!"</p>
+                </div>
+
+                <div>
+                    <img src="" alt="">
+                    <div style="display: flex; flex-direction: column;">
+                        <p>Elena Torres</p>
+                        <p>Paciente de Ortodoncia</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <a href="" class="button">Leer mas rese;as en google</a>
+
+
+    </section>
+    <hr>
+    
     <section>
-        <h1 class="section-title">Hero</h1>
+        <h1>Porque nosotros?</h1>
+    </section>
+    <hr>
+    
+    <section>
+        <h1>Staff</h1>
+    </section>
+    <hr>
+    
+    <section>
+        <h1>Preguntas Frecuentes</h1>
     </section>
     <hr>
 
     <section>
-        <h1 class="section-title">Miedo al dentista?</h1>
-    </section>
-    <hr>
-
-    <section>
-        <h1 class="section-title">Servicios</h1>
-    </section>
-    <hr>
-    
-    <section>
-        <h1 class="section-title">Ratings</h1>
-    </section>
-    <hr>
-    
-    <section>
-        <h1 class="section-title">Porque nosotros?</h1>
-    </section>
-    <hr>
-    
-    <section>
-        <h1 class="section-title">Staff</h1>
-    </section>
-    <hr>
-    
-    <section>
-        <h1 class="section-title">Preguntas Frecuentes</h1>
-    </section>
-    <hr>
-
-    <section>
-        <h1 class="section-title">Contacto</h1>
+        <h1>Contacto</h1>
     </section>
     <hr>
 
