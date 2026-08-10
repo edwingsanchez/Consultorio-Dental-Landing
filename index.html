@@ -158,6 +158,41 @@
         color: #1F1F24FF; 
     }
 
+    .razon-card{
+        width: 379px; 
+        height: 146px; 
+        padding: 32px;
+
+        background: #F8FAFCFF; 
+        border-radius: 16px; 
+        border-width: 1px; 
+        border-color: #E2E8F0FF; 
+        border-style: solid; 
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .razon-card-titulo{
+        font-family: DM Sans; 
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #0C9488FF; 
+        background: #F8FAFCFF
+    }
+
+    .razon-card-cont{
+        font-family: DM Sans; 
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #5B5B64FF; 
+        background: #F8FAFCFF
+
+    }
+
 
 
 
@@ -354,8 +389,49 @@
     </section>
     <hr>
     
-    <section>
-        <h1>¿Por qué elegir Sonrisitas?</h1>
+    <section style="display: flex; flex-direction: column; align-items: center; gap: 47px;">
+        <div style="width: 568px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 17px; text-align: center;">
+            <h1>¿Por qué elegir Sonrisitas?</h1>
+            <p class="section-subtitle">Nos enfocamos en detalles que marcan la diferencia en tu experiencia dental.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 23px; ">
+            <div style="display: flex; flex-direction: row; gap: 23px;">
+                <div class="razon-card">
+                    <p class="razon-card-titulo">CITAS EL MISMO DIA</p>
+                    <p class="razon-card-cont">Emergencias dentales atendidas con prioridad inmediata.</p>
+                </div>
+                <div class="razon-card">
+                    <p class="razon-card-titulo">PLANES DE FINANCIAMIENTO</p>
+                    <p class="razon-card-cont">Facilidades de pago sin intereses para tus tratamientos.</p>
+
+                </div>
+                <div class="razon-card">
+                    <p class="razon-card-titulo">ESPECIALISTAS CERTIFICADOS</p>
+                    <p class="razon-card-cont"> Todo nuestro staff cuenta con postgrados en sus áreas.</p>
+
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row; gap: 23px;">
+                <div class="razon-card">
+                    <p class="razon-card-titulo">TECNOLOGIA 3D</p>
+                    <p class="razon-card-cont">Escaneo intraoral para evitar las molestas pastas de impresión.</p>
+                </div>
+                <div class="razon-card">
+                    <p class="razon-card-titulo">SEDACION CONSCIENTE</p>
+                    <p class="razon-card-cont">Opción ideal para pacientes con ansiedad extrema.</p>
+
+                </div>
+                <div class="razon-card">
+                    <p class="razon-card-titulo">SEGUIMIENTO POSTVENTA</p>
+                    <p class="razon-card-cont">Estamos pendientes de tu evolución después de cada cita.</p>
+
+                </div>
+            </div>
+
+        </div>
+        
     </section>
     <hr>
     
