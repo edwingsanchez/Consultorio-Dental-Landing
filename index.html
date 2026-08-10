@@ -127,13 +127,35 @@
     .rating-card{
         width: 374px; 
         height: 281px; 
+        padding: 31px 6px; 
+        
         background: #F6F6F9FF; 
+        font-family: 'DM Sans';
+        box-shadow: 0px 2px 4px #00000014, 0px 0px 0px #171a1f00; /* shadow-custom */
         border-radius: 12px; 
 
         display: flex;
         flex-direction: column;
-        font-family: 'DM Sans';
+        justify-content: space-between;
+        text-align: center;
 
+
+    }
+
+    .rating-user{
+        display: flex; 
+        flex-direction: row; 
+        text-align: start;
+        gap: 16px; 
+        padding: 0px 24px;
+        align-items: center;
+    }
+
+    .rating-user-nombre{
+        font-family: DM Sans; 
+        font-size: 14px;
+        font-weight: 700; 
+        color: #1F1F24FF; 
     }
 
 
@@ -275,12 +297,9 @@
 
 
 
-
-
-
     <hr>
     
-    <section style="display: flex; flex-direction: column; align-items: center; gap: 48px">
+    <section style="display: flex; flex-direction: column; align-items: center; gap: 48px;">
         <div style="width: 656px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 17px; text-align: center;">
             <h1>Lo que dicen nuestros pacientes</h1>
             <p class="section-subtitle">La satisfacción de quienes ya confían en nosotros es nuestra mejor carta de presentación.</p>
@@ -289,63 +308,54 @@
         <div style="display: flex; flex-direction: row; justify-content: center; gap: 31px;">
             <div class="rating-card">
                 <div>
-                    <p>*****</p>
-                    <p>"Increíble trato desde el primer día. El equipo de Sonrisitas me hizo sentir en casa y los resultados de mis brackets son espectaculares."</p>
+                    <p style="font-weight: bold; color: orange; font-size: 30px;">*****</p>
+                    <p class="section-parrafo" style="font-style: italic;">"Increíble trato desde el primer día. El equipo de Sonrisitas me hizo sentir en casa y los resultados de mis brackets son espectaculares."</p>
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <div style="display: flex; flex-direction: column;">
-                        <p>Carla Mendez</p>
-                        <p>Paciente de Ortodoncia</p>
-                    </div>
+                <div class="rating-user">
+                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
+                    <p class="rating-user-nombre">Carla Mendez</p>
                 </div>
             </div>
 
             
             <div class="rating-card">
                 <div>
-                    <p>*****</p>
-                    <p>"Buscaba algo natural y profesional. Aquí entendieron perfectamente lo que quería. El proceso fue rápido y sin dolor. ¡Altamente recomendados!"</p>
+                    <p style="font-weight: bold; color: orange; font-size: 30px;">*****</p>
+                    <p class="section-parrafo" style="font-style: italic;">"Buscaba algo natural y profesional. Aquí entendieron perfectamente lo que quería. El proceso fue rápido y sin dolor. ¡Altamente recomendados!"</p>
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <div style="display: flex; flex-direction: column;">
-                        <p>Roberto Silva De alegría</p>
-                        <p>Paciente de Ortodoncia</p>
-                    </div>
+                <div class="rating-user">
+                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%; ">
+                    <p class="rating-user-nombre">Roberto Silva De alegría</p>
                 </div>
             </div>
 
             
             
             <div class="rating-card">
-                <div>
-                    <p>*****</p>
-                    <p>"Llevar a mis hijos al dentista solía ser un drama, pero en Sonrisitas los tratan con tanta dulzura que ahora hasta piden ir. ¡Gracias!"</p>
+                <div> 
+                    <p style="font-weight: bold; color: orange; font-size: 30px;">*****</p>
+                    <p class="section-parrafo" style="font-style: italic;">"Llevar a mis hijos al dentista solía ser un drama, pero en Sonrisitas los tratan con tanta dulzura que ahora hasta piden ir. ¡Gracias!"</p>
                 </div>
 
-                <div>
-                    <img src="" alt="">
-                    <div style="display: flex; flex-direction: column;">
-                        <p>Elena Torres</p>
-                        <p>Paciente de Ortodoncia</p>
-                    </div>
+                <div class="rating-user">
+                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
+                    <p class="rating-user-nombre">Elena Torres</p>
                 </div>
             </div>
 
 
         </div>
 
-        <a href="" class="button">Leer mas rese;as en google</a>
+        <a href="" class="button" style="color: black; background: #F6F6F9FF; font-family: 'DM Sans'; box-shadow: 0px 2px 4px #00000014, 0px 0px 0px #171a1f00;">Leer mas reseñas en google</a>
 
 
     </section>
     <hr>
     
     <section>
-        <h1>Porque nosotros?</h1>
+        <h1>¿Por qué elegir Sonrisitas?</h1>
     </section>
     <hr>
     
