@@ -106,6 +106,12 @@
         font-weight: 500; 
         padding: 12px 24px;
         font-style: 'DM Sans';
+        box-shadow: 0px 10px 25px #00000026, 0px 0px 0px #171a1f00;
+    }
+
+    .button:hover{
+    color: #E4FDF9FF; 
+    background: rgb(7, 87, 81); 
     }
 
 
@@ -192,6 +198,80 @@
         background: #F8FAFCFF
 
     }
+
+    .staff-card{
+        width: 496px; 
+        height: 352px; 
+        background: #F6F6F9FF; 
+        border-radius: 16px; 
+        border: solid 1px #D3D3D8FF;  
+        box-shadow: 0px 2px 4px #00000014, 0px 0px 0px #171a1f00; /* shadow-custom */
+        
+        display: flex;
+        align-items:center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 33px;
+
+    }
+
+    .staff-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .staff-card-title{
+        font-family: Outfit; 
+        font-size: 28px;
+        font-weight: 600; 
+        color: #0C9488FF;
+        width: 215px;  
+    }
+
+    .staff-card-subtitle{
+        width: 201px; 
+        font-family: DM Sans; 
+        font-size: 14px; 
+        line-height: 20px; 
+        font-weight: 600; 
+        color: #5B5B64FF; 
+    }
+
+    .staff-card-parrafo{
+        width: 246px; 
+        font-family: DM Sans; 
+        font-size: 16px; 
+        line-height: 24px; 
+        font-weight: 400; 
+        color: #5B5B64FF; 
+    }
+
+
+    .query{
+        width: 672px; 
+        height: 74px; 
+        padding: 0px 23px;
+
+        background: #F6F6F9FF; 
+        border-radius: 12px; 
+        border-style: solid 1px #D3D3D8FF; 
+        box-shadow: 0px 2px 4px #00000014, 0px 0px 0px #171a1f00;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-family: DM Sans; 
+        font-size: 16px; 
+        font-weight: 600;
+        color: #1F1F24FF; 
+        background: #00000000; /* transparent */
+        opacity: 1; 
+        border: none;
+    }
+
 
 
 
@@ -435,13 +515,64 @@
     </section>
     <hr>
     
-    <section>
-        <h1>Staff</h1>
+
+
+    <section style="display: flex; flex-direction: column; align-items: center; gap: 48px;">
+        <h1>Conoce a Nuestro Equipo</h1>
+
+        <div style="display: flex; flex-direction: row; gap: 32px;">
+            <div class="staff-card">
+                <img src="" alt="" style="width: 160px; height: 160px; border-radius: 100%; background-color: lavender;">
+                <div class="staff-container">
+                    <p class="staff-card-title">Dra. Mariana Valdez</p>
+                    <p class="staff-card-subtitle">Directora Médica & Especialista en Estética</p>
+                    <p class="staff-card-parrafo">"Mi misión es que cada paciente salga de la clínica sintiéndose más seguro de sí mismo. La odontología es arte y ciencia combinados."</p>
+                </div>
+            </div>
+
+            <div class="staff-card">
+                <img src="" alt="" style="width: 160px; height: 160px; border-radius: 100%; background-color: lavender;">
+                <div class="staff-container">
+                    <p class="staff-card-title">Dr. Alejandro Ruiz</p>
+                    <p class="staff-card-subtitle">Especialista en Implantología y Cirugía</p>
+                    <p class="staff-card-parrafo">"La precisión tecnológica nos permite ofrecer soluciones definitivas con el menor impacto posible para el paciente."</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="" class="button">Conocelos</a>
     </section>
-    <hr>
     
-    <section>
+
+
+    <section style="display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
         <h1>Preguntas Frecuentes</h1>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <div class="query">
+                <p>¿Aceptan seguros dentales?</p>
+                <p>></p>
+            </div>
+
+            <div class="query">
+                <p>¿Desde qué edad pueden ir los niños?</p>
+                <p>></p>
+            </div>
+
+            <div class="query">
+                <p>¿Duele el tratamiento de blanqueamiento?</p>
+                <p>></p>
+            </div>
+
+            <div class="query">
+                <p>¿Qué facilidades de pago ofrecen?</p>
+                <p>></p>
+            </div>
+
+            <div class="query">
+                <p>¿Cómo agendo mi primera cita?</p>
+                <p>></p>
+            </div>
+        </div>
     </section>
     <hr>
 
