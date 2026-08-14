@@ -114,6 +114,33 @@
     }
 
 
+    .hero-tag{
+        width: 258px; 
+        height: 38px; 
+
+        background: #CBF0EAFF; 
+        border-radius: 9999px; 
+        border-width: 1px; 
+        border-color: #B1E4DCFF; 
+        border-style: solid; 
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 9px;
+        align-items: center;
+    }
+
+    .hero-tag p{
+        font-family: DM Sans; 
+        font-size: 14px;
+        font-weight: 700; 
+        color: #005A52FF; 
+    }
+
+
+
+
     .Painpoint-card{
         width: 200px;
 
@@ -123,6 +150,10 @@
         text-align: center;
         gap: 24px;
     }
+
+
+
+
 
     .Servicios *{
         background-color: white;
@@ -271,6 +302,27 @@
     }
 
 
+
+
+    .contact-tag{
+        width: 170px; 
+        height: 24px;
+        border-radius: 999px;
+        
+        color: #FFFFFFFF;
+        background: #3DA9A0;
+        
+        padding-left: 2px; 
+        padding-right: 2px;
+
+        font-weight: 600;
+        font-size: 12px; 
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .contact-form{
         width: 448px; 
         height: 402px; 
@@ -355,38 +407,90 @@
 </style>
 <body>
     <header>
-        <h3 style="font-size: 20px; font-weight: 700;">Sonrisitas</h2>
+        <div style="display: flex; flex-direction: row; gap: 8px; align-items: center; ">
+            <img src="/imagenes/Logo.png" style="width: 40px; height: 40px; ">
+            <p style="font-size: 20px; font-weight: 700;">Sonrisitas</p>
+        </div>
+        
         <nav>
-            <a href="">333-333-333</a>
+            <div style="display: flex; flex-direction: row; gap: 8px; align-items: center;">
+                <img src="/imagenes/lucide-Phone-Outlined (3).svg" style="width: 16px; height: 16px;">
+                <a href="">333-333-333</a>
+            </div>
+            
             <a href="" class="button" style="font-weight: 600">Reservar Cita</a>
         </nav>
     </header>
     <hr>
 
-    <section style="display: flex; align-items: center; justify-content: center; gap: 65px;">
-        <div style="width: 559px; display: flex; flex-direction: column; align-items: center; gap: 32px;">
-            <h1 style="font-family: Outfit; font-size: 56px; line-height: 64px; font-weight: 700;">Recupera tu <span style="color: #0C9488; font-style: italic;">Seguridad</span> con una Sonrisa Radiante</h1>
-            <p class="section-subtitle">En Sonrisitas, transformamos vidas a través de la salud dental. Tecnología de vanguardia y calidez humana para toda tu familia.</p>
-            <div style="display: flex; flex-direction: row; gap: 30px; width: 100%; height: auto;">
-                <p class="button" style="font-size: 18px; font-family: DM Sans;">Agendar cita ahora</p>
-                <p class="button" style="font-size: 18px; font-family: DM Sans; background: #F6F6F9FF; color: black; border: solid 1px black; color: #1F1F24FF; ">Ver Servicios</p>
+
+
+
+
+
+
+
+    <section style="height: 810px;  display: flex; align-items: center; justify-content: center; gap: 65px;">
+        
+        <div style="width: 559px; display: flex; flex-direction: column; gap: 50px;">
+            <div class="hero-tag">
+                <img src="/imagenes/hero-star.png" alt="">
+                <p>TU CLINICA DE CONFIANZA</p>
             </div>
-            <div style="display: flex; flex-direction: row; gap: 26px; width: 100%; height: auto;">
-                <div>
-                    <img src="" alt="" style="width: 36px; height: 36px;">
-                    <img src="" alt="" style="width: 36px; height: 36px;">
-                    <img src="" alt="" style="width: 36px; height: 36px;">
+
+            <div style="width: 559px; display: flex; flex-direction: column; gap: 32px;">
+                
+                <h1 style="font-family: Outfit; font-size: 56px; line-height: 64px; font-weight: 700;">Recupera tu <span style="color: #0C9488; font-style: italic;">Seguridad</span> con una Sonrisa Radiante</h1>
+                
+                <p class="section-subtitle">En Sonrisitas, transformamos vidas a través de la salud dental. Tecnología de vanguardia y calidez humana para toda tu familia.</p>
+                
+                <div style="display: flex; flex-direction: row; gap: 30px; width: 100%; height: auto;">
+                    <div class="button" style="display: flex; flex-direction: row; gap: 13px; align-items: center;">
+                        <p style="font-size: 18px; font-family: DM Sans;">Agendar cita ahora</p>
+                        <img src="/imagenes/Calendar-Outlined.svg" style="width: 20px; height: 20px;">
+                    </div>
+                    
+                    <p class="button" style="font-size: 18px; font-family: DM Sans; background: #F6F6F9FF; color: black; border: solid 1px black; color: #1F1F24FF; ">Ver Servicios</p>
+                </div>
+
+            </div>
+
+            
+            <div style="display: flex; flex-direction: row; gap: 45px;">
+                <div style="display: flex; flex-direction: row; justify-content: space-between; width: 88px;">
+                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
+                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
+                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
                 </div>
 
                 <div style="display: flex; flex-direction: column;">
-                    <p style="padding: 0%; margin: 0%; font-weight: bold; font-size: 30px; width: 88px; height: 16px; display: flex; align-items: center;">*****</p>
-                    <p><span style="font-weight: bold;">2,500</span> Pacientes Felices</p>
+                    <div style="display: flex; flex-direction: row;">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                    </div>
+
+                    <p style="font-family: DM Sans; font-size: 14px; font-weight: 400; color: #5B5B64FF; "><span style="font-weight: bold; color: black;">2,500</span> Pacientes Felices</p>
                 </div>
             </div>
         </div>
-        <div style="width: 538px; height: 314px; border: solid 1px black; border-radius: 25px;">
-            <img src="" alt="">
+
+
+        <div style="width: 538px; height: 314px; border: solid 2px rgb(255, 255, 255); border-radius: 25px; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+            <img src="/imagenes/Hero-image.webp" style="width: 100%;">
         </div>
+
+
+
+
+
+
+
+
+
+
 
     </section>
     <hr>
@@ -400,16 +504,19 @@
         <div style="display: flex; flex-direction: row; justify-content: center; gap: 78px;">
             
             <div class="Painpoint-card">
+                <img src="/imagenes/painpoint.png" alt="">
                 <h3>Seguridad Total</h3>
                 <p class="section-parrafo">Protocolos de bioseguridad certificados para tu tranquilidad.</p>
             </div>
             
             <div class="Painpoint-card">
+                <img src="/imagenes/pinpointimg2.png" alt="">
                 <h3>Sin Esperas</h3>
                 <p class="section-parrafo">Valoramos tu tiempo. Agendamos con precisión para evitar retrasos.</p>
             </div>
             
             <div class="Painpoint-card">
+                <img src="/imagenes/painpoint3.png" alt="">
                 <h3>Calidad Superior</h3>
                 <p class="section-parrafo">Utilizamos solo los mejores materiales dentales del mercado.</p>
             </div>
@@ -425,65 +532,129 @@
 
 
 
+
+
+
+
+
+
     <section class="Servicios" style="background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 112px; ">
+        
         <div style="height: auto; width: 650px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
             <h1>Nuestros Servicios Especializados</h1>
             <p class="section-parrafo">Tratamientos diseñados para cada etapa de tu vida y necesidades específicas.</p>
         </div>
+
         <div style="height: auto; display: flex; flex-direction: row; justify-content: center; gap: 84px;">
-            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 32px;">
+            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 24px;">
                 <h2>Odontología Estética Avanzada</h2>
                 <p class="section-parrafo">Consigue la sonrisa de tus sueños con carillas de porcelana, diseño de sonrisa digital y blanqueamiento profesional de última generación. Resultados naturales y duraderos.</p>
                 <div style="display: flex; flex-direction: column; justify-content: center; gap: 12px; font-family: 'DM Sans'; font-weight: 500;">
-                    <p>Atención personalizada</p>
-                    <p>Tecnología de punta</p>
-                    <p>Resultados garantizados</p>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Atención personalizada</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Tecnología de punta</p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Resultados garantizados</p>
+                    </div>
+                    
                 </div>
                 <a href="" class="button" style="width: 150px; background-color: #0C9488; font-weight: 500; font-family: 'DM Sans';">Saber Más ></a>
             </div>
-            <div style="width: 567px; height: 378px; border: solid 1px black; border-radius: 15px;">
-                <img src="" alt="">
+            
+            <div style="width: 567px; height: 378px; overflow: hidden; display: flex; align-items: center; border: solid 1px black; border-radius: 15px;">
+                <img src="/imagenes/servicio1.webp" style="width: 100%;">
             </div>
         </div>  
         
     </section>
 
+
+
     <section class="Servicios" style="height: 509px; background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 112px; ">
+        
         <div style="height: auto; display: flex; flex-direction: row; justify-content: center; gap: 84px;">
-            <div style="width: 567px; height: 378px; border: solid 1px black; border-radius: 15px;">
-                <img src="" alt="">
+            <div style="width: 567px; height: 378px; overflow: hidden; display: flex; align-items: center; border: solid 1px black; border-radius: 15px;">
+                <img src="/imagenes/Servicio2.webp" alt="">
             </div>
-            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 32px;">
+
+            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 24px;">
                 <h2>Clínica Moderna y Equipada</h2>
+                
                 <p class="section-parrafo">Contamos con equipos de rayos X digitales, escáneres intraorales y sillones ergonómicos para asegurar diagnósticos precisos y la máxima comodidad durante tu visita.</p>
+                
                 <div style="display: flex; flex-direction: column; justify-content: center; gap: 12px; font-family: 'DM Sans'; font-weight: 500;">
-                    <p>Atención personalizada</p>
-                    <p>Tecnología de punta</p>
-                    <p>Resultados garantizados</p>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Atención personalizada</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Tecnología de punta</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Resultados garantizados</p>
+                    </div>    
                 </div>
+
                 <a href="" class="button" style="width: 150px; background-color: #0C9488; font-weight: 500; font-family: 'DM Sans';">Saber Más ></a>
             </div>
         </div>  
+
     </section>
 
+
+
     <section class="Servicios" style="height: 509px; background-color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 112px; ">
-<div style="height: auto; display: flex; flex-direction: row; justify-content: center; gap: 84px;">
-            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 32px;">
+        
+        <div style="height: auto; display: flex; flex-direction: row; justify-content: center; gap: 84px;">
+            <div style=" height: auto; width: 567px; display: flex; flex-direction: column; justify-content: center; gap: 24px;">
                 <h2>Implantes y Rehabilitación</h2>
                 <p class="section-parrafo">Recupera la funcionalidad de tu boca con especialistas en implantología. Procedimientos mínimamente invasivos con materiales biocompatibles de alta resistencia.</p>
+                
                 <div style="display: flex; flex-direction: column; justify-content: center; gap: 12px; font-family: 'DM Sans'; font-weight: 500;">
-                    <p>Atención personalizada</p>
-                    <p>Tecnología de punta</p>
-                    <p>Resultados garantizados</p>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Atención personalizada</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Tecnología de punta</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; gap: 12px;">
+                        <img src="/imagenes/visily-circle-check (1).png">
+                        <p>Resultados garantizados</p>
+                    </div>    
                 </div>
+
                 <a href="" class="button" style="width: 150px; background-color: #0C9488; font-weight: 500; font-family: 'DM Sans';">Saber Más ></a>
             </div>
-            <div style="width: 567px; height: 378px; border: solid 1px black; border-radius: 15px;">
-                <img src="" alt="">
+            
+            <div style="width: 567px; height: 378px; overflow: hidden; display: flex; align-items: center; border: solid 1px black; border-radius: 15px;">
+                <img src="/imagenes/servicio3.webp" style="width: 100%;">
             </div>
         </div>  
         
     </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
     
@@ -495,8 +666,15 @@
 
         <div style="display: flex; flex-direction: row; justify-content: center; gap: 31px;">
             <div class="rating-card">
-                <div>
-                    <p style="font-weight: bold; color: orange; font-size: 30px;">*****</p>
+
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; width: 96px;">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                    </div>
                     <p class="section-parrafo" style="font-style: italic;">"Increíble trato desde el primer día. El equipo de Sonrisitas me hizo sentir en casa y los resultados de mis brackets son espectaculares."</p>
                 </div>
 
@@ -508,8 +686,14 @@
 
             
             <div class="rating-card">
-                <div>
-                    <p style="font-weight: bold; color: orange; font-size: 30px;">*****</p>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; width: 96px;">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                    </div>
                     <p class="section-parrafo" style="font-style: italic;">"Buscaba algo natural y profesional. Aquí entendieron perfectamente lo que quería. El proceso fue rápido y sin dolor. ¡Altamente recomendados!"</p>
                 </div>
 
@@ -522,8 +706,14 @@
             
             
             <div class="rating-card">
-                <div> 
-                    <p style="font-weight: bold; color: orange; font-size: 30px;">*****</p>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;"> 
+                    <div style="display: flex; flex-direction: row; justify-content: space-between; width: 96px;">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                        <img src="/imagenes/star (3).svg" alt="">
+                    </div>
                     <p class="section-parrafo" style="font-style: italic;">"Llevar a mis hijos al dentista solía ser un drama, pero en Sonrisitas los tratan con tanta dulzura que ahora hasta piden ir. ¡Gracias!"</p>
                 </div>
 
@@ -594,7 +784,9 @@
 
         <div style="display: flex; flex-direction: row; gap: 32px;">
             <div class="staff-card">
-                <img src="" alt="" style="width: 160px; height: 160px; border-radius: 100%; background-color: lavender;">
+                <div style="width: 160px; height: 160px; overflow: hidden; border-radius: 100%; background-color: lavender;">
+                    <img src="" style="width: 100%;">
+                </div>
                 <div class="staff-container">
                     <p class="staff-card-title">Dra. Mariana Valdez</p>
                     <p class="staff-card-subtitle">Directora Médica & Especialista en Estética</p>
@@ -603,7 +795,9 @@
             </div>
 
             <div class="staff-card">
-                <img src="" alt="" style="width: 160px; height: 160px; border-radius: 100%; background-color: lavender;">
+                <div style="width: 160px; height: 160px; overflow: hidden; border-radius: 100%; background-color: lavender; display: flex; align-items: center;">
+                    <img src="/imagenes/C1.jpg" style="width: 100%;">
+                </div>
                 <div class="staff-container">
                     <p class="staff-card-title">Dr. Alejandro Ruiz</p>
                     <p class="staff-card-subtitle">Especialista en Implantología y Cirugía</p>
@@ -647,19 +841,55 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
     <section style="display: flex; justify-content: center; align-items: center; width: 1440px; height: 948px; ">
         <div style="width: 1184px; height: 756px; background: #0C9488FF; border-radius: 40px; box-shadow: 0px 25px 50px #00000040, 0px 0px 0px #171a1f00; display: flex; justify-content: center; align-items: center; gap: 79px;">
             
-            <div style="background: #0C9488FF; width: 497px; display: flex; flex-direction: column; justify-content: center; gap: 44px;">
-                <div style="display: flex; flex-direction: column; gap: 32px;">
+            <div style="background: #0C9488FF; display: flex; flex-direction: column; justify-content: center; gap: 44px;">
+                
+                <div style="width: 497px; display: flex; flex-direction: column; gap: 30px;">
+                    <p class="contact-tag">Promocion de apertura</p>
                     <h1 style="color: #E4FDF9FF; width: 462px;">Tu primera consulta de diagnóstico es <span style="text-decoration: underline;">Totalmente Gratis</span></h1>
                     <p class="section-subtitle" style="color: #E4FDF9FF; ">No dejes pasar más tiempo. Una pequeña molestia hoy puede ser un gran problema mañana. Agenda hoy y asegura tu salud dental.</p>
                 </div>
 
-                <div style="display: flex; flex-direction: row; gap: 32px; color: #E4FDF9FF; font-weight: 500;">
-                    <div style="display: flex; flex-direction: column; gap: 26px;">  <p>Examen clínico completo</p> <p>Radiografías básicas incluidas</p>  </div>
-                    <div style="display: flex; flex-direction: column; gap: 26px;">  <p>Plan de tratamiento digital</p> <p>Limpieza simple opcional</p>  </div>
+                <div style="display: flex; flex-direction: column; gap: 26px; color: #E4FDF9FF; font-weight: 500;">
+
+                    <div style="display: flex; flex-direction: row; gap: 42px; align-items: center;"> 
+
+                        <div style="display: flex; flex-direction: row; gap: 12px;">
+                            <img src="/imagenes/visily-circle-check (1).png" style="width: 20px; height: 20px; ">
+                            <p>Examen clínico completo</p> 
+                        </div>
+                        <div style="display: flex; flex-direction: row; gap: 12px; align-items: center;">
+                            <img src="/imagenes/visily-circle-check (1).png" style="width: 20px; height: 20px; ">
+                            <p>Radiografías básicas <br> incluidas</p> 
+                        </div>
+
+                    </div>
+
+                    <div style="display: flex; flex-direction:row; gap: 32px;">  
+                        
+                        <div style="display: flex; flex-direction: row; gap: 12px;">
+                            <img src="/imagenes/visily-circle-check (1).png" style="width: 20px; height: 20px; ">
+                            <p>Plan de tratamiento digital</p>
+                        </div> 
+                        <div style="display: flex; flex-direction: row; gap: 12px;">
+                            <img src="/imagenes/visily-circle-check (1).png" style="width: 20px; height: 20px; ">
+                            <p>Limpieza simple opcional </p>  
+                        </div>
+
+                     </div>
+
                 </div>
+
                 <a href="" style="  width: 308px; 
                 height: 56px; 
                 padding: 0 12px; 
@@ -707,21 +937,46 @@
     </section>
     <hr>
 
-    <footer style="display: flex; flex-direction: column; gap: 48px;">
+
+
+
+
+
+
+
+
+    <footer style="height: 414px;  display: flex; flex-direction: column; gap: 48px;">
         <div style="display: flex; flex-direction: row; justify-content: space-between;">
+
             <div style="display: flex; flex-direction: column; width: 387px; gap: 22px;">
-                <H3>Sonrisitas</H3>
-                <p class="section-parrafo">Tu salud dental es nuestra prioridad. En Sonrisitas, combinamos tecnología avanzada y trato humano para regalarte la sonrisa que siempre has deseado.</p>
-                <div style="display: flex; flex-direction: row; gap: 16px;" class="section-parrafo">
-                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
-                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
-                    <img src="" alt="" style="width: 36px; height: 36px; border-radius: 100%;">
+                <div style="display: flex; flex-direction: row; align-items: center; gap: 8px;">
+                    <img src="/imagenes/Logo.png" alt="">
+                    <p style="font-size: 16px; font-weight: 600;">Sonrisitas</p>
                 </div>
+                
+                
+                <p style="  font-family: DM Sans; font-size: 16px; line-height: 24px; font-weight: 400; color: #5B5B64FF;"
+                >Tu salud dental es nuestra prioridad. En Sonrisitas, combinamos tecnología avanzada y trato humano para regalarte la sonrisa que siempre has deseado.</p>
+                
+                <div style="display: flex; flex-direction: row; gap: 16px; font-size: 14px;">
+                    <div style="background-color: #E5E5E8; width: 36px; height: 36px; border-radius: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="/imagenes/lucide-Facebook-Outlined (2).svg" style="width: 20px; height: 20px;">
+                    </div>
+
+                    <div style="background-color: #E5E5E8; width: 36px; height: 36px; border-radius: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="/imagenes/lucide-Instagram-Outlined (1).svg" style="width: 20px; height: 20px;">
+                    </div>
+
+                    <div style="background-color: #E5E5E8; width: 36px; height: 36px; border-radius: 100%; display: flex; justify-content: center; align-items: center;">
+                        <img src="/imagenes/lucide-Twitter-Outlined (1).svg" style="width: 20px; height: 20px;">
+                    </div>
+                </div>
+
             </div>
 
             <div style="display: flex; flex-direction: column; gap: 16px;">
-                <h3>Enlaces Rápidos</h3>
-                <div style="display: flex; flex-direction: column; gap: 8px;" class="section-parrafo">
+                <p style="font-size: 16px; font-weight: 600;">Enlaces Rápidos</p>
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 400;  color: #5B5B64FF">
                     <p>Inicio</p>
                     <p>Servicios</p>
                     <p>Sobre Nosotros</p>
@@ -729,23 +984,36 @@
                 </div>
             </div>
 
-            <div style="display: flex; flex-direction: column; gap: 16px;" class="section-parrafo">
-                <h3>Contacto</h3>
-                <div style="display: flex; flex-direction: column; gap: 12px;">
-                    <p>Calle Dental 123, Ciudad Salud</p>
-                    <p>+52 55 1234 5678</p>
-                    <p>hola@sonrisitas.dental</p>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <p style="font-size: 16px; font-weight: 600;">Contacto</p>
+                <div style="display: flex; flex-direction: column; gap: 12px; font-size: 14px; font-weight: 400;  color: #5B5B64FF">
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 8px;">
+                        <img src="/imagenes/lucide-MapPin-Outlined (2).svg" style="width: 16px; height: 16px; fill: #5B5B64FF; ">
+                        <p>Calle Dental 123, Ciudad Salud</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 8px;">
+                        <img src="/imagenes/lucide-Phone-Outlined (3).svg" style="width: 16px; height: 16px; fill: #5B5B64FF; ">
+                        <p>+52 55 1234 5678</p>
+                    </div>
+                    <div style="display: flex; flex-direction: row; align-items: center; gap: 8px;">
+                        <img src="/imagenes/lucide-Mail-Outlined (1).svg" style="width: 16px; height: 16px; fill: #5B5B64FF; ">
+                        
+                        <p>hola@sonrisitas.dental</p>
+                    </div>
+                    
+                    
+                    
                 </div>
             </div>
         </div>
 
 
-  <div style="width: 1232px; height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+  <div style="width: 1232px; height: 49px; display: flex; flex-direction: column; justify-content: space-between; font-size: 12px; color: #5B5B64FF;">
     <hr style="  width: 1232px; height: 0px; border-width: 1px; border-color: #D3D3D8FF; border-style: solid; transform: rotate(0deg); ">
     
-    <div style="display: flex; flex-direction: row; justify-content: space-between;">
-        <p class="section-parrafo">© 2026 Sonrisitas Clínica Dental. Todos los derechos reservados.</p>
-        <div style="display: flex; flex-direction: row; gap: 23px;" class="section-parrafo">
+    <div style="display: flex; flex-direction: row; justify-content: space-between; ">
+        <p>© 2026 Sonrisitas Clínica Dental. Todos los derechos reservados.</p>
+        <div style="display: flex; flex-direction: row; gap: 23px; font-size: 12px; color: #5B5B64FF;">
             <p>Política de Privacidad</p>
             <p>Términos de Servicio</p>
         </div>
